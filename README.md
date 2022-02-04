@@ -12,7 +12,7 @@ We introduce community conventions for the parameters of Algorand Standard Asset
 
 ## Abstract
 
-The goal of these conventions is to store the relevant DAO information of a given ASA on-chain. This ARC differs from [ARC69](https://github.com/algokittens/arc69/edit/master/README.md) by adding necessary basic DAO and unique communication platform information as well as current member, role, team, and project statuses using of onchain metadata. Furthermore, since asset configuration transactions are used to store the metadata, this ARC can be applied to existing ASAs.
+The goal of these conventions is to store the relevant DAO information of a given ASA on-chain. This ARC differs from [ARC69](https://github.com/algokittens/arc69/edit/master/README.md) by adding necessary basic DAO and unique communication platform information as well as current member, role, team, and project statuses using of on-chain metadata. Furthermore, since asset configuration transactions are used to store the metadata, this ARC can be applied to existing ASAs.
 
 While mutability helps with backwards compatibility and other use cases, some use cases call for immutability. In these cases, the ASA manager MAY remove the manager address, after which point the Algorand network won't allow anyone to send asset configuration transactions for the ASA. This effectively makes the latest valid ARC-333 metadata immutable.
  
