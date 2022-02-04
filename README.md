@@ -126,14 +126,12 @@ An example of an ARC-69 JSON Metadata file for a song follows. The properties ar
     "standard": "arc333",
     "name": "Dad DAO NFT#1",
     "description": "A Learning Community and DApp Incubator",
-    "external_url": "https://www.daddao.org",
-    "media_url": "https://gateway.pinata.cloud/ipfs/QmUnCYRWY8w9i37Rh2fvAySf6R6YT1BjSa6BAiXP7xS4YA?preview=1",
-    "media_integrity": "QmSMMk23vaxWxPqWRdzXxvY4YWMnTVJRWgowDzd9S8jC6m"
+    "external_url": "https://gateway.pinata.cloud/ipfs/QmUnCYRWY8w9i37Rh2fvAySf6R6YT1BjSa6BAiXP7xS4YA?preview=1",
     "mime_type": "image/png",
     "dao": {
         "dao_property": {
             "name": "DadDAO",
-            "dao_id": "910249072986828870",
+            "dao_id": "910249072986828870"
         },
         "member_property": {
             "name": "Broke",
@@ -141,13 +139,13 @@ An example of an ARC-69 JSON Metadata file for a song follows. The properties ar
             "role": "Generalist",
             "team": "TBP",
             "project": "Longevity",
-            "member_status": "Active",
+            "member_status": "Active"
         },
         "collection_hash": {
             "hash": "a3074c1e17ca34419b79d9926777dcc4ff142460af7f9071d8828198bd2b3eb6"
         }
     }
-}      
+}           
 ```
 
 An example of possible ASA parameters would be:
