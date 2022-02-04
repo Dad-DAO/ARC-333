@@ -1,3 +1,3 @@
-# ARCs
-Location of ARCs for Dad DAO
-towards the creation of new metadata standards relevant to NFTs controlling communication platform scope and a DAO treasury
+# ARC-33
+Location of the new ARC standard for Dad DAO on Algorand
+This "Living Proposal" is created for new metadata standards relevant to NFTs controlling a DAO's main communication platform and their associated treasury
