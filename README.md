@@ -95,7 +95,6 @@ There are no requirements regarding the manager account of the ASA, or the reser
             "type": "array",
             "description": "(Deprecated. New NFTs should define attributes with the simple `properties` object. Marketplaces should support both the `properties` object and the `attributes` array). The `attributes` array follows Open Sea's format: https://docs.opensea.io/docs/metadata-standards#attributes"
         },
-
         "dao": {
             "type": "object",
             "description": "Properties following the ARC-33 'DAO information' format. (https://github.com/Dad-DAO/ARC33"
