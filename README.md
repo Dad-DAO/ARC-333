@@ -119,19 +119,21 @@ In addition to specifying a data type in the ASA's URL (`au` field) with a URI f
 
 ##### Basic Example
 
-An example of an ARC-69 JSON Metadata file for a song follows. The properties array proposes some **SUGGESTED** formatting for token-specific display properties and metadata.
+An example of an ARC-333 JSON Metadata file for a song follows. The properties array proposes some **SUGGESTED** formatting for token-specific display properties and metadata.
 
 ```json
 {
     "standard": "arc333",
     "name": "Dad DAO NFT#1",
     "description": "A Learning Community and DApp Incubator",
-    "external_url": "https://gateway.pinata.cloud/ipfs/QmUnCYRWY8w9i37Rh2fvAySf6R6YT1BjSa6BAiXP7xS4YA?preview=1",
+    "external_url": "https://www.daddao.org",
+    "media_url": "ipfs://QmUnCYRWY8w9i37Rh2fvAySf6R6YT1BjSa6BAiXP7xS4YA",
+    "media_integrity": "QmSMMk23vaxWxPqWRdzXxvY4YWMnTVJRWgowDzd9S8jC6m",
     "mime_type": "image/png",
     "dao": {
         "dao_property": {
             "name": "DadDAO",
-            "dao_id": "910249072986828870"
+            "dao_id": "910249072986828870",
         },
         "member_property": {
             "name": "Broke",
@@ -139,20 +141,20 @@ An example of an ARC-69 JSON Metadata file for a song follows. The properties ar
             "role": "Generalist",
             "team": "TBP",
             "project": "Longevity",
-            "member_status": "Active"
+            "member_status": "Active",
         },
         "collection_hash": {
             "hash": "a3074c1e17ca34419b79d9926777dcc4ff142460af7f9071d8828198bd2b3eb6"
         }
     }
-}           
+}      
 ```
 
 An example of possible ASA parameters would be:
 
-* *Asset Name*: `ARC69 theme song` for example.
-* *Unit Name*: `69TS` for example.
-* *Asset URL*: `ipfs://QmWS1VAdMD353A6SDk9wNyvkT14kyCiZrNDYAad4w1tKqT#v`
+* *Asset Name*: `ARC333 theme song` for example.
+* *Unit Name*: `DADDAONFT` for example.
+* *Asset URL*: `ipfs://QmUnCYRWY8w9i37Rh2fvAySf6R6YT1BjSa6BAiXP7xS4YA#i`
 * *Metadata Hash*: the 32 bytes of the SHA-256 digest of the high resolution media file.
 * *Total Number of Units*: 1
 * *Number of Digits after the Decimal Point*: 0
@@ -165,35 +167,11 @@ Clients SHOULD render an ASA's latest ARC333 metadata. Clients MAY render an ASA
 
 ##### Updating ARC333 metadata
 
-Managers MAY update an ASA's ARC69 metadata. To do so, they MUST send a new `acfg` transaction with the entire metadata represented as JSON in the transaction's `note` field.
+Managers MAY update an ASA's ARC333 metadata. To do so, they MUST send a new `acfg` transaction with the entire metadata represented as JSON in the transaction's `note` field.
 
-##### Making ARC69 metadata immutable
+##### Making ARC333 metadata immutable
 
-Managers MAY make an ASA's ARC69 immutable. To do so, they MUST remove the ASA's manager address with an `acfg` transaction.
-
-##### ARC69 attribute deprecation
-
-The initial version of ARC69 followed the [Open Sea attributes format](https://docs.opensea.io/docs/metadata-standards#attributes). As illustrated below:
-```
-"attributes": {
-"type": "array",
-"description": "Attributes following Open Sea's attributes format (https://docs.opensea.io/docs/metadata-standards#attributes)."
-}
-```
-This format is now deprecated. New NFTs **SHOULD** use the simple `properties` format, since it significantly reduces the metadata size.
-
-To be fully compliant with the ARC69 standard, both the `properties` object and the `attributes` array **SHOULD** be supported. 
-
-## Rationale
-
-These conventions take inspiration from [Open Sea's metadata standards](https://docs.opensea.io/docs/metadata-standards) and [EIP-1155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1155.md#erc-1155-metadata-uri-json-schema) to facilitate interoperobility. 
-
-The main differences are highlighted below:
-
-* Asset Name, Unit Name, and URL are specified in the ASA parameters. This allows applications to efficienty display meaningful information, even if they aren't aware of ARC-69 metadata.
-* MIME types help clients more effectively fetch and render media.
-* All asset metadata is stored onchain.
-* Metadata can be either mutable or immutable.
+Managers MAY make an ASA's ARC333 immutable. To do so, they MUST remove the ASA's manager address with an `acfg` transaction.
 
 ## Copyright
 
