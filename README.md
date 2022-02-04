@@ -51,7 +51,6 @@ There are no requirements regarding the manager account of the ASA, or the reser
 
 ```json
 {
-{
     "title": "Token Metadata",
     "type": "object",
     "properties": {
@@ -100,9 +99,6 @@ There are no requirements regarding the manager account of the ASA, or the reser
         "dao": {
             "type": "object",
             "description": "Properties following the ARC-33 'DAO information' format. (https://github.com/Dad-DAO/ARC33"
-        }
-    }
-}
         }
     }
 }
