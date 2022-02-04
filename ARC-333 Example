@@ -1,0 +1,18 @@
+
+    "name": "Dad DAO NFT#1",
+    "description": "A Learning Community and DApp Incubator",
+    "image": "https://gateway.pinata.cloud/ipfs/QmUnCYRWY8w9i37Rh2fvAySf6R6YT1BjSa6BAiXP7xS4YA?preview=1",
+    "dao": {
+        "dao_property": {
+            "name": "DadDAO",
+            "dao_id": "910249072986828870",
+        "member_property": {
+            "name": "Broke",
+            "member_id": "132999600813506560",
+            "role": "Generalist",
+            "team": "TBP",
+            "project": "Longevity",
+            "member_status": "Active",
+        "collection_hash": {
+            "hash": "a3074c1e17ca34419b79d9926777dcc4ff142460af7f9071d8828198bd2b3eb6"
+        }
